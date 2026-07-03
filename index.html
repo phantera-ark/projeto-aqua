@@ -19,8 +19,9 @@
 
 <body>
   <main>
-    <section>
-      <img src="assets/img/predio-destaque.png" alt="Vista aerea do andamento da obra do projeto acqua">
+    <section class="destaque">
+      <img src="assets/img/predio-destaque.png" alt="Vista aerea do andamento da obra do projeto acqua" class="sr-only">
+
       <div class="overlay">
         <p><span>45</span> <span>dias</span></p>
         <p><span>10</span> <span>horas</span></p>
@@ -29,20 +30,20 @@
       </div>
     </section>
 
-    <section>
+    <section class="description">
       <h1>Prédio Acqua</h1>
       <h2>Receba novidades sobre nosso lançamento.</h2>
       <p>Morar contemporâneo para pessoas com estilo de vida dinâmico e que buscam praticidade no seu dia a dia. Lazer,
         esporte, trabalho e contato com a natureza em um só lugar.</p>
 
       <form>
-        <label for="email">Email</label>
+        <label for="email" class="sr-only">Email</label>
         <input type="email" name="email" id="email" placeholder="Digite seu email..." required>
         <button type="submit">Quero saber mais</button>
       </form>
     </section>
 
-    <section>
+    <section class="galeria">
       <h2>Andamento do projeto</h2>
       <p>Veja como está o andamento da construção.</p>
 

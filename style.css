@@ -40,7 +40,6 @@ body {
   border: 0;
 }
 
-/* remover após finalizar o site*/
 img {
   max-width: 100%;
 }
@@ -154,6 +153,13 @@ img {
   font-size: 1rem;
   font-weight: 600;
   color: var(--cor-branca);
+  cursor: pointer;
+  transition: background 300ms;
+}
+
+.description button:hover {
+  background-image: none;
+  background-color: var(--cor-azul-claro);
 }
 
 .galeria {
@@ -177,4 +183,29 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
+}
+
+.galeria ul img {
+  transition: transform 300ms;
+}
+
+.galeria ul img:hover {
+  transform: scale(0.9);
+}
+
+@media(min-width: 744px) {
+  .galeria ul {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media(min-width: 1200px) {
+  .container {
+    display: flex;
+  }
+
+  .description,
+  .destaque {
+    width: 50%;
+  }
 }
